@@ -1,0 +1,30 @@
+{
+    "model": "TinyLlama",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 60,
+      "top_p": 0.85,
+      "top_k": 20,
+      "frequency_penalty": 0.3,
+      "presence_penalty": 0.3,
+      "max_response_length": 60,
+      "no_repeat_ngram_size": 2,
+      "batch_size": 1,
+      "mirostat": 1,
+      "mirostat_eta": 0.8,
+      "mirostat_tau": 3.0,
+      "num_ctx": 1024,
+      "repeat_last_n": 16,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "stop": "AI assistant:",
+      "num_predict": 50,
+      "min_p": 0.05
+    },
+    "output_settings": {
+      "response_max_length": 60,
+      "response_truncate": true,
+      "language": "es"
+    }
+  }
+  

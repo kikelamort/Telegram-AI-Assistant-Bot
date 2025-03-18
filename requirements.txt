@@ -1,0 +1,4 @@
+python-telegram-bot==20.3
+requests==2.31.0
+jsonschema==4.17.3
+logging==0.4.9.6

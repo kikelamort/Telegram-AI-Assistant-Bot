@@ -1,0 +1,112 @@
+🤖 Telegram AI Assistant Bot
+
+A smart Telegram bot that acts as a virtual business assistant, leveraging an AI-powered API to provide contextual responses based on stored documents.
+
+🚀 Features
+
+🤖 AI-powered responses using a customizable model.
+
+📂 Reads and stores documents for context-aware answers.
+
+📝 Logs user interactions in a JSON file.
+
+📌 Supports basic commands like /start and /help.
+
+🔗 Built with python-telegram-bot for seamless Telegram integration.
+
+📜 Securely manages user data and interactions.
+
+🌐 Easy deployment with minimal setup.
+
+📦 Requirements
+
+Python 3.8+
+
+A Telegram bot token (created via BotFather)
+
+An API endpoint for processing user queries
+
+requirements.txt dependencies installed
+
+🛠 Installation
+
+Clone this repository:
+
+git clone https://github.com/kikelamort/telegram-ai-assistant.git
+cd telegram-ai-assistant
+
+Create a virtual environment (recommended):
+
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+🔧 Configuration
+
+Create a config.json file in the project root:
+
+{
+    "parameters": {
+        "temperature": 0.7,
+        "max_tokens": 80,
+        "top_p": 0.9,
+        "frequency_penalty": 0.5,
+        "presence_penalty": 0.5,
+        "no_repeat_ngram_size": 2
+    }
+}
+
+Set environment variables:
+
+export TELEGRAM_TOKEN="YOUR_TELEGRAM_BOT_TOKEN"
+export OLLAMA_URL="YOUR_API_ENDPOINT"
+
+Windows (PowerShell):
+
+$env:TELEGRAM_TOKEN="YOUR_TELEGRAM_BOT_TOKEN"
+$env:OLLAMA_URL="YOUR_API_ENDPOINT"
+
+▶️ Running the Bot
+
+Start the bot with:
+
+python main.py
+
+📂 Project Structure
+
+main.py → Main bot logic
+
+config.json → AI model configuration
+
+documents/ → Folder storing reference documents
+
+bot_questions.json → Logs user interactions
+
+requirements.txt → Required dependencies
+
+🛠 Usage Examples
+
+Start the bot: /start
+
+Get help: /help
+
+Ask a question: Just type it in the chat!
+
+📈 Future Improvements
+
+🔄 Add support for more document formats.
+
+🤝 Multi-language support.
+
+📊 Advanced analytics for user interactions.
+
+🤝 Contributing
+
+Feel free to submit issues or pull requests to enhance the project!
+
+📜 License
+
+This project is licensed under the MIT License. Feel free to use and modify it as needed. 🚀

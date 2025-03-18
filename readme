@@ -73,13 +73,13 @@ $env:OLLAMA_URL="YOUR_API_ENDPOINT"
 
 Start the bot with:
 
-python main.py
+BOT.py OR BOT+MEMORY.py
 
 📂 Project Structure
 
 main.py → Main bot logic
 
-config.json → AI model configuration
+modelfile.json → AI model configuration
 
 documents/ → Folder storing reference documents
 
@@ -109,4 +109,5 @@ Feel free to submit issues or pull requests to enhance the project!
 
 📜 License
 
-This project is licensed under the MIT License. Feel free to use and modify it as needed. 🚀
+This project is licensed under RIOTHEDOG S.A
+
